@@ -1,0 +1,53 @@
+API Simples com Python e Postman
+Uma API básica construída com Flask para gerenciar uma lista de livros. Você pode usar ferramentas como Postman para testar as operações CRUD (Create, Read, Update, Delete) fornecidas pela API.
+
+Instruções de Uso
+Pré-requisitos
+Python 3.x
+Flask
+Postman (ou qualquer ferramenta similar para testar APIs)
+Instalação
+Clone o repositório:
+bash
+Copy code
+git clone https://github.com/seu-usuario/api-simples-python-postman.git
+cd api-simples-python-postman
+Instale as dependências:
+bash
+Copy code
+pip install Flask
+Executando a API
+Execute o seguinte comando no terminal:
+
+bash
+Copy code
+python nome_do_arquivo.py
+A API estará acessível em http://localhost:5000.
+
+Testando as Operações CRUD
+Use o Postman para testar as operações CRUD disponíveis:
+
+Obter Todos os Livros:
+
+Método: GET
+URL: http://localhost:5000/livros
+Obter Livro por ID:
+
+Método: GET
+URL: http://localhost:5000/livros/1
+Editar Livro por ID:
+
+Método: PUT
+URL: http://localhost:5000/livros/1
+Corpo da solicitação (JSON): {"titulo": "Novo Título", "autor": "Novo Autor"}
+Incluir Novo Livro:
+
+Método: POST
+URL: http://localhost:5000/livros
+Corpo da solicitação (JSON): {"titulo": "Novo Livro", "autor": "Novo Autor"}
+Excluir Livro por ID:
+
+Método: DELETE
+URL: http://localhost:5000/livros/1
+Contribuindo
+Sinta-se à vontade para contribuir! Se encontrar problemas ou tiver sugestões, abra uma issue ou envie um pull request.
